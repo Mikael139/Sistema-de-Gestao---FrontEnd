@@ -1,13 +1,180 @@
-form{
-  width: 500px;
-  margin: 30px auto;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+  --cor-de-fundo: #2C3333;
+  --cor-cabecalho: rgba(0, 0, 0, 0.17);
+}
+
+*{
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  box-sizing: border-box;
+  color:rgba(57, 91, 100, 0.7);;
+}
+.container{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.17);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between; /* Distribui a logo e os links */
+  align-items: center; /* Centraliza verticalmente */
+  margin: 0 0 70px;
+  padding: 33px 41px 31px 10px;
+
+}
+
+.navbar-brand {
+  font-family: Poppins;
+  font-size: 180%;
+  font-weight: bold;
+  color: #e7f6f2; 
+  margin-left: 70px;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px; /* Controla o espaçamento entre os links */
+  margin-right: -500px;
+}
+
+.nav-link {
+  font-family: Poppins;
+  font-size: 130%;
   text-align: center;
+  color: #e7f6f2;
+  text-decoration: none;
 }
 
-form input{
-  margin-bottom: 10px;
+.nav-link:hover{
+  color: #395B64;
+  cursor: pointer;
 }
 
-form input[type='button'] {
-  margin-right: 10px;
+
+.menu {
+  width: 623px;
+  height: 226px;
+  margin-left: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+
+  position: center;
 }
+
+.form-control {
+  width: 295px;
+  height: 62px;
+  grid-column: span 1;
+  margin: 0 200px 10px -109px;
+  padding: 13px 40px 11px;
+  border-radius: 20px;
+  background-color: #e7f6f2;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  color: rgba(57, 91, 100, 0.7);
+
+}
+
+.form-control.descricao {
+  grid-column: span 2;
+  margin: 0px 0 26px -110px;
+  width: 700px;
+  height: 80 px;
+  padding: 12px; 
+  border-radius: 20px;
+  background-color: #e7f6f2;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  color: rgba(57, 91, 100, 0.7);
+}
+
+.form-control:focus {
+  background-color: #e7f6f2 ;
+  color: #395B64;
+}
+
+
+
+.btn.btn-primary{
+  grid-column: span 2;
+  justify-self: center;
+  width: auto; /* Remova a largura fixa */
+  height: 46px;
+  margin: -10px 186px 0px -110px;
+  padding: 4px 45px;
+  border-radius: 26px;
+  background-color: #e7f6f2;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  color: rgba(57, 91, 100, 0.7);
+}
+
+.btn.btn-primary:hover {
+  color: #2C3333;
+  background-color: #395B64;
+  cursor: pointer;
+}
+
+input::placeholder{
+  color: rgba(57, 91, 100, 0.7);
+}
+
+.conteudo{
+  margin: 30px 300px 30px;
+}
+
+.table{
+  width: 1625px;
+  height: 505px;
+  background-color:rgba(231, 246, 242, 0.20);
+  border-radius: 29px;
+  margin-left: -170px;
+  margin-top: 70px;
+  justify-content: space-between;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.table-informacao{
+  margin-top: 39px;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+  color: #2c3333;
+  border-bottom: #a5c9ca;
+  border-style: solid;
+  margin-bottom: 140%;
+}
+
+
+
+
+
+
+
+
+
+
+

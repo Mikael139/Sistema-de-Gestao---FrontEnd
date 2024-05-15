@@ -1,9 +1,10 @@
 function FormularioDeGastos({botao, eventoTeclado, cadastrar, obj, cancelar, remover, alterar}) {
     return(
-        <form>
+        <form className="menu">
             <input type="date" value={obj.dataGasto} onChange={eventoTeclado} name="dataGasto" placeholder="Data do gasto..." className="form-control"/>
-            <input type="text" value={obj.descricao} onChange={eventoTeclado} name="descricao" placeholder="Descricao" className="form-control"/>
-            <input type="number" value={obj.valorGasto} onChange={eventoTeclado} name="valorGasto" placeholder="Valor gasto..." className="form-control"/>
+            <input type="number" value={obj.valorGasto} onChange={eventoTeclado} name="valorGasto" placeholder="Valor gasto" className="form-control"/>
+            <input type="text" value={obj.descricao} onChange={eventoTeclado} name="descricao" placeholder="Descrição" className="form-control descricao"/>
+
         
             {
                 botao 

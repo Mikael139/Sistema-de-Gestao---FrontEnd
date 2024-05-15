@@ -3,7 +3,7 @@ function TabelaDeGastos({vetor, selecionar}) {
     return(
         <table className="table">
             <thead>
-                <tr>
+                <tr className="table-informacao">
                     <th>#</th>
                     <th>Data do gasto</th>
                     <th>Descrição</th>
@@ -11,7 +11,7 @@ function TabelaDeGastos({vetor, selecionar}) {
                     <th>Selecionar</th>
                 </tr>
             </thead>
-
+        
             <tbody>
                 {
                    vetor.map((obj, indice) => (
@@ -19,7 +19,7 @@ function TabelaDeGastos({vetor, selecionar}) {
                         <td>{indice+1}</td>
                         <td>{obj.dataGasto}</td>
                         <td>{obj.descricao}</td>
-                        <td>R$ {obj.valorGasto}</td>
+                        <td>R$ {obj.valorGasto.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</td>
                         <td><button onClick={() => {selecionar(indice)}} className="btn btn-success">Selecionar</button></td>
                     </tr>
                    )) 
